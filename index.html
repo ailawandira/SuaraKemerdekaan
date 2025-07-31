@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hari Kemerdekaan Indonesia</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <header class="navbar">
+        <div class="logo">Merdeka!</div>
+        <nav>
+        <ul class="nav">
+            <li class="nav-item">
+                <a href="index.html" style="text-decoration: none;">Beranda</a>
+            </li>
+            <li class="nav-item">
+                <a href="#Sejarah">Sejarah</a>
+            </li>
+            <li class="nav-item">
+                <a href="#Pahlawan">Pahlawan</a>
+            </li>
+            <li class="btn-aksi">
+                <a href="#Login"><button class="btn-aksi" onclick="scrollKeKonten()"><b>Login</b></button></a>
+            </li>
+        </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <main class="hero">
+        <h1>
+        <span class="highlight">Dirgahayu</span> Republik Indonesia ke-<span class="highlight">80</span>!
+        </h1>
+        <p>
+        17 Agustus 1945 — 17 Agustus 2025
+        Mari kita kobarkan kembali semangat perjuangan para pahlawan bangsa!
+        Delapan puluh tahun sudah Indonesia merdeka, dan kini saatnya kita mengisi kemerdekaan dengan karya, semangat persatuan, dan harapan untuk masa depan yang lebih gemilang.
+        💬 “Bangsa yang besar adalah bangsa yang menghargai jasa pahlawannya.” – Ir. Soekarno
+        Selamat Hari Kemerdekaan!
+        Semoga Indonesia semakin maju, adil, dan sejahtera bagi seluruh rakyatnya.
+        </p>
+        <div class="cta-buttons">
+        <button onclick="showMessage()"><b>Ucapan Kemerdekaan</b></button>
+        </div>
+        <div class="floating-images">
+        <div class="img-card float" style="--i:1;">
+            <img src="ir.soekarno.jpg" alt="Pahlawan 1" />
+        </div>
+        <div class="img-card float" style="--i:2;">
+            <img src="kartini.jpg" alt="Pahlawan 2" />
+        </div>
+        <div class="img-card float" style="--i:3;">
+            <img src="moh.hatta.jpg" alt="Pahlawan 3" />
+        </div>
+        </div>
+    </main>
+    <section id="Sejarah" class="slide-in">
+        <section class="sejarah-container">
+        <div class="kartu-kiri">
+        <img src="proklamasi.jpeg" class="kartu" alt="Proklamasi">
+        <img src="Ir_Soekarno.jpeg" class="kartu delay1" alt="Soekarno Hatta">
+        <img src="upacara1945.jpeg" class="kartu delay2" alt="Bendera Merah Putih">
+        </div>
+        <div class="teks-kanan">
+        <h2><span>Sejarah</span> Kemerdekaan Indonesia</h2>
+        <br>
+        <p>
+            Kemerdekaan Indonesia diproklamasikan pada 17 Agustus 1945 oleh Ir. Soekarno dan 
+            Drs. Mohammad Hatta di Jakarta, setelah Jepang menyerah kepada Sekutu dalam Perang 
+            Dunia II. Sebelumnya, Indonesia dijajah Belanda selama lebih dari 300 tahun, lalu 
+            dikuasai Jepang sejak 1942. Janji kemerdekaan dari Jepang pada tahun 1944 mendorong 
+            semangat rakyat, namun tidak segera terlaksana. Setelah Jepang menyerah pada 15 Agustus 
+            1945, para pemuda mendesak kemerdekaan tanpa campur tangan Jepang, yang memicu peristiwa 
+            Rengasdengklok di mana Soekarno dan Hatta dibawa untuk mempercepat proklamasi. Keesokan 
+            harinya, teks proklamasi kemerdekaan dibacakan dan Indonesia menyatakan diri sebagai 
+            negara merdeka. Meski demikian, perjuangan belum selesai karena Belanda berusaha kembali 
+            menjajah, hingga akhirnya Indonesia diakui secara internasional melalui Konferensi Meja 
+            Bundar pada 27 Desember 1949.
+        </p>
+        <br>
+        </div>
+        </section>
+    </section>
+    <br>
+    <section id="Pahlawan" class="slide-in">
+    <div class="carousel-container">
+        <h2>PAHLAWAN KEMERDEKAAN</h2>
+        <div class="carousel">
+                <div class="carousel-track">
+                    <div class="card"><img src="ir.soekarno.jpg" alt=""><p>Ir. Soekarno</p></div>
+                    <div class="card"><img src="moh.hatta.jpg" alt=""><p>Drs. Mohammad Hatta</p></div>
+                    <div class="card"><img src="sudirman.jpeg" alt=""><p>Jenderal Sudirman</p></div>
+                    <div class="card"><img src="kartini.jpg" alt=""><p>R.A. Kartini</p></div>
+                    <div class="card"><img src="cutnyakdhien.jpeg" alt=""><p>Cut Nyak Dhien</p></div>
+                    <div class="card"><img src="Kaptain Patimura.jpeg" alt=""><p>Pattimura</p></div>
+                    <div class="card"><img src="KiHadjarDewantara.jpeg" alt=""><p>Ki Hajar Dewantara</p></div>
+                    <div class="card"><img src="Tuanku Imam Bonjol.jpeg" alt=""><p>Tuanku Imam Bonjol</p></div>
+                </div>
+        </div>
+    </div>
+    </section>
+    <section id="Login" class="slide-in">
+        <div class="login-box">
+            <h2>Login Warga</h2>
+            <input type="text" id="name" placeholder="Nama (bebas)">
+            <input type="password" id="password" placeholder="Password (harus mengandung angka dan simbol)">
+            <input type="text" id="country" placeholder="Warga Negara">
+            <button onclick="login()">Login</button>
+            <p id="message" class="message"></p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    </body>
+</html>
